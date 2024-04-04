@@ -1,5 +1,5 @@
 const mongoose = require("mongoose")
-const menuItemSchema = new mongoose.scheema({
+const menuItemSchema = new mongoose.Schema({
     name:{
         type:String,
         required:true
@@ -28,6 +28,7 @@ const menuItemSchema = new mongoose.scheema({
     
 
 })
+
 //comment added for testing purposes
 const MenuItem = mongoose.model("MenuItem",menuItemSchema)
 module.exports = MenuItem

@@ -1,7 +1,7 @@
 const express = require('express')
 const router = express.Router()
 const MenuItem = require('./../models/MenuItem')
-router.post('7',async(req,res)=>{
+router.post('/',async(req,res)=>{
     try{
       const data = req.body
       const newMenuItem = new MenuItem(data)
